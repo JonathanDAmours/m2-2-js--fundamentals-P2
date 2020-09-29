@@ -9,6 +9,12 @@
 // -----------------------------------------------------------------
 function countChar(str, char) {
   // str and char are both strings
+  let count = 0;
+  str.split("").forEach(function(letter){
+    if (letter === char) count += 1;
+  });
+  return count;
+
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)

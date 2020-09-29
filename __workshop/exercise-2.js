@@ -6,7 +6,13 @@
 //
 // Edit only the code between the lines (below)
 function getMax(num1, num2) {
-  // your code here...
+  if (num1 > num2){
+    console.log(num1);
+  } else if (num1 < num2){
+    console.log(num2); 
+  } else{
+    console.log("Those intergers are even")
+  }
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)

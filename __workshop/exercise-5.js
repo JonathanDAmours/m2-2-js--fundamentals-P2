@@ -6,7 +6,13 @@
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
 function itemIsPresent(array, item) {
-  // code here
+
+  if(array.includes(item)){
+    return true;
+  } else {
+    return false;
+  }
+  // expected output: true
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)

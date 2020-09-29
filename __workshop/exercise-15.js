@@ -9,6 +9,9 @@
 // -----------------------------------------------------------------
 function filterNonUnique(arr) {
   // arr is an array of values of any type
+  return arr.filter(function (double){
+    return arr.indexOf(double) === arr.lastIndexOf(double);
+  });
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)

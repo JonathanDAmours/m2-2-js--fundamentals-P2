@@ -9,9 +9,13 @@
 // -----------------------------------------------------------------
 function allLong(list) {
   // list is an array of strings
-}
+  return list.every(word => word.length > 4);
+  }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
+
+console.log(allLong(["Robert", "Nic", "Luc", "Joe"]));
+console.log(allLong(["Alexandre", "Fanie", "Brownie", "Candy", "Grizzli", "Johnny"]));
 
 // Create more test cases.
 

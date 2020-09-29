@@ -6,7 +6,18 @@
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
 function calculateAverage(num1, num2, num3, num4, num5) {
-  // code here
+  let sum = num1 + num2 + num3 + num4 + num5;
+  // let sumStr = sum+"";
+  // let newRes = sumStr.split(".");
+  // let decimal = newRes[1];
+  // if (Number(decimal) < 5){
+  //   return Math.floor(sum/5);
+  // } else {
+  //   return Math.ceil(sum/5);
+  // }
+
+  return Math.floor(sum/5);
+  
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
@@ -19,3 +30,5 @@ console.log(calculateAverage(3, 1, 1, 1, 1));
 
 // This is needed for automated testing (more on that later)
 module.exports = calculateAverage;
+
+

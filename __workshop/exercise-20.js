@@ -15,8 +15,12 @@
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
 function every(arr, func) {
-  // arr is an array and f is a function
-  // func takes 1 argument and returns a boolean
+  let verifyBoo = true;
+  arr.forEach((value) => {
+    if (verifyBoo) {
+      verifyBoo = func(value);
+    }
+  }); return verifyBoo;
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)

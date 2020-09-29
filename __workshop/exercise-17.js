@@ -21,7 +21,26 @@
 // -----------------------------------------------------------------
 function findArmstrongNumbers(num1, num2) {
   // num1 and num2 are Numbers
+  let armstrongNbrs = [];
+
+  for (let i = num1; i <= num2; i++) {
+    let digits = i.toString().split("");
+    let sum = 0;
+    digits.forEach(function (digit) {
+      let productOf = 1;
+      for (let x = 0; x < digits.length; x++) {
+        productOf *= digit;
+      }
+      sum += productOf;
+    });
+    if (sum === i) {
+      armstrongNbrs.push(i);
+    }
+  }
+
+  return armstrongNbrs;
 }
+
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
 
